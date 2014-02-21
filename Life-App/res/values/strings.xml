@@ -4,5 +4,10 @@
     <string name="app_name">Life-App</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="scripts_title">Scripts</string>
+    <string name="greetings_button">Greetings</string>
+    <string name="departures_button">Departures</string>
+    <string name="disagreements_button">Handling Disagreements</string>
+    <string name="dos_and_donts_button">Conversation Dos and Donts</string>
 
 </resources>
