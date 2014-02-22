@@ -1,0 +1,9 @@
+    <resources>
+        <color name="light_blue">#87CEFA</color>
+        <color name = "list_divider">#87CEFA</color>
+        <color name = "list_background">#191970</color>
+        <color name = "background">#191970</color>
+        <color name = "list_background_pressed">#87CEEB</color>
+        <color name = "list_item_title">#8470FF</color>
+        <color name = "counter_text_color">#AFEEEE</color>
+    </resources>

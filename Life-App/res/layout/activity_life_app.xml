@@ -1,60 +1,99 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ 
+    <!-- Framelayout to display Fragments -->
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+ 
+    <!-- Listview to display slider menu -->
+    <ListView
+        android:id="@+id/side_menu"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"       
+        android:listSelector="@drawable/list_selector"
+        android:background="@color/list_background"/>
+</android.support.v4.widget.DrawerLayout>
+
+
+<!-- <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/light_blue"
+    tools:context=".LifeApp" >
+    
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
     tools:context=".LifeApp" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:text="@string/scripts_title"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-    
-   <Button
-        android:id="@+id/Button01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="39dp"
-        android:text="@string/greetings_button" />
-   
-   <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Button01"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp"
-        android:text="@string/departures_button" />
+	   
+	    <TextView
+	        android:id="@+id/scripts_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/scripts_title"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	  
+	    <Button
+	        android:id="@+id/greetings_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="39dp"
+	        android:text="@string/greetings" />
+	
+	
+	    <Button
+	        android:id="@+id/departures_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@+id/greetings_button"
+	        android:layout_marginTop="42dp"
+	        android:text="@string/departures" />
+	
+	   	
+	    <Button
+	        android:id="@+id/disagreements_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@+id/departures_button"
+	        android:layout_marginTop="45dp"
+	        android:text="@string/disagreements" />
+	
+	
+	    <Button
+	        android:id="@+id/dos_and_donts_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below= "@+id/disagreements_button"
+	        android:layout_marginTop="32dp"
+	        android:text="@string/dos_and_donts" />
+    </RelativeLayout>
 
-    <Button
-        android:id="@+id/Button02"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/button1"
-        android:layout_marginTop="45dp"
-        android:text="@string/disagreements_button" />
-
-
-
-    
-
-    <Button
-        android:id="@+id/Button03"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/Button02"
-        android:layout_marginTop="32dp"
-        android:text="@string/dos_and_donts_button" />
-
-</RelativeLayout>
+</ScrollView>
+-->
