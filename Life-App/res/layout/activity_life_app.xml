@@ -1,60 +1,60 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".LifeApp" >
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:text="@string/scripts_title"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height = "fill_parent"
+    android:background="@color/main_background">
     
-   <Button
-        android:id="@+id/Button01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="39dp"
-        android:text="@string/greetings_button" />
-   
-   <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Button01"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp"
-        android:text="@string/departures_button" />
-
-    <Button
-        android:id="@+id/Button02"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/button1"
-        android:layout_marginTop="45dp"
-        android:text="@string/disagreements_button" />
-
-
-
-    
-
-    <Button
-        android:id="@+id/Button03"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/Button02"
-        android:layout_marginTop="32dp"
-        android:text="@string/dos_and_donts_button" />
-
-</RelativeLayout>
+    	<RelativeLayout	   
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="@dimen/activity_vertical_margin"
+	    android:paddingLeft="@dimen/activity_horizontal_margin"
+	    android:paddingRight="@dimen/activity_horizontal_margin"
+	    android:paddingTop="@dimen/activity_vertical_margin">
+	
+	    <TextView
+	        android:id="@+id/scripts_menu_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/scripts_title"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	    
+	   <Button
+	        android:id="@+id/greetings"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@+id/scripts_menu_title"
+	        android:layout_marginTop="39dp"
+	        android:text="@string/greetings_button" />
+	   
+	   <Button
+	        android:id="@+id/departures"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/greetings"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="42dp"
+	        android:text="@string/departures_button" />
+	
+	    <Button
+	        android:id="@+id/disagreements"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@+id/departures"
+	        android:layout_marginTop="45dp"
+	        android:text="@string/disagreements_button" />	    
+	
+	    <Button
+	        android:id="@+id/dos_and_donts"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@+id/disagreements"
+	        android:layout_marginTop="32dp"
+	        android:text="@string/dos_and_donts_button" />
+	
+	</RelativeLayout>
+</ScrollView>

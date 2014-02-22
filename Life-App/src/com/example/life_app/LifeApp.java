@@ -2,21 +2,51 @@ package com.example.life_app;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
-public class LifeApp extends Activity {
+public class LifeApp extends Activity implements OnClickListener {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_life_app);
+		
+		Button greetingsButton = (Button) findViewById(R.id.greetings);
+		greetingsButton.setOnClickListener(this);
+		
+		Button departureButton = (Button) findViewById(R.id.departures);
+		departureButton.setOnClickListener(this);		
 	}
+	
+
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.life_app, menu);
 		return true;
+	}
+	
+	@Override
+	public void onClick(View theView)
+	{
+		switch(theView.getId())
+		{
+			case R.id.greetings: 
+				Intent greetIntent = new Intent(this,Greetings.class);
+				startActivity(greetIntent);
+				break;
+			case R.id.departures:
+				Intent departIntent = new Intent(this,Departures.class);
+				startActivity(departIntent);
+				break;
+			default:
+				break;
+		}
 	}
 
 }

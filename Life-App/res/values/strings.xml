@@ -9,5 +9,8 @@
     <string name="departures_button">Departures</string>
     <string name="disagreements_button">Handling Disagreements</string>
     <string name="dos_and_donts_button">Conversation Dos and Donts</string>
+    <string name="title_activity_departures">Departures</string>
+    <string name="title_activity_greetings">Greetings</string>
+    <string name="title_activity_pager">Pager</string>
 
 </resources>

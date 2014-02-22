@@ -22,6 +22,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.life_app.Departures"
+            android:label="@string/title_activity_departures" >
+        </activity>
+        <activity
+            android:name="com.example.life_app.Greetings"
+            android:label="@string/title_activity_greetings" >
+        </activity>
+        <activity
+            android:name="com.example.life_app.Pager"
+            android:label="@string/title_activity_pager" >
+        </activity>
     </application>
 
 </manifest>
