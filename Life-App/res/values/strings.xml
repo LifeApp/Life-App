@@ -12,5 +12,12 @@
     <string name="title_activity_departures">Departures</string>
     <string name="title_activity_greetings">Greetings</string>
     <string name="title_activity_pager">Pager</string>
+    <string name="script_sample_text">Written Samples</string>
+    <string name="video_sample_text">Videos</string>
+    <string name="family_sub_cat">Family</string>
+    <string name="friends_sub_cat">Friends</string>
+    <string name="new_people_sub_cat">New People</string>
+    <string name="professionals_sub_cat">Professionals</string>
+
 
 </resources>
