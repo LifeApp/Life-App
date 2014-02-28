@@ -19,7 +19,8 @@ public class LifeApp extends ActionBarActivity implements OnClickListener {
 		greetingsButton.setOnClickListener(this);
 		
 		Button departureButton = (Button) findViewById(R.id.departures);
-		departureButton.setOnClickListener(this);		
+		departureButton.setOnClickListener(this);	
+		
 	}
 	
 
@@ -45,6 +46,11 @@ public class LifeApp extends ActionBarActivity implements OnClickListener {
 			Intent departIntent = new Intent(this,Departures.class);
 			startActivity(departIntent);
 		}
+		else if (id == R.id.written_samples) 
+		{
+			Intent scriptIntent = new Intent(this,Written_Samples.class);
+			startActivity(scriptIntent);
+		}		
 		else
 		{
 		}

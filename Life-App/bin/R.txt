@@ -241,8 +241,8 @@ int id action_context_bar 0x7f05001d
 int id action_menu_divider 0x7f050016
 int id action_menu_presenter 0x7f050017
 int id action_mode_close_button 0x7f050024
-int id action_search 0x7f050044
-int id action_settings 0x7f050045
+int id action_search 0x7f050046
+int id action_settings 0x7f050047
 int id activity_chooser_view_content 0x7f050025
 int id always 0x7f05000b
 int id beginning 0x7f050011
@@ -255,6 +255,7 @@ int id disableHome 0x7f050008
 int id disagreements 0x7f05003f
 int id dos_and_donts 0x7f050040
 int id dropdown 0x7f05000f
+int id editText1 0x7f050045
 int id edit_query 0x7f050030
 int id end 0x7f050013
 int id expand_activities_button 0x7f050026
@@ -274,7 +275,7 @@ int id normal 0x7f050000
 int id progress_circular 0x7f050018
 int id progress_horizontal 0x7f050019
 int id radio 0x7f05002f
-int id scripts_button 0x7f050043
+int id scripts_button 0x7f050044
 int id scripts_menu_title 0x7f05003c
 int id scrollView1 0x7f050042
 int id search_badge 0x7f050032
@@ -300,6 +301,7 @@ int id top_action_bar 0x7f050020
 int id up 0x7f050021
 int id useLogo 0x7f050003
 int id withText 0x7f05000c
+int id written_samples 0x7f050043
 int integer abc_max_action_buttons 0x7f090000
 int layout abc_action_bar_decor 0x7f030000
 int layout abc_action_bar_decor_include 0x7f030001
@@ -328,10 +330,12 @@ int layout activity_life_app 0x7f030017
 int layout departures_layout 0x7f030018
 int layout greetings_layout 0x7f030019
 int layout support_simple_spinner_dropdown_item 0x7f03001a
+int layout written_samples_layout 0x7f03001b
 int menu departure_actionbar 0x7f0c0000
 int menu departures 0x7f0c0001
 int menu greetings 0x7f0c0002
 int menu life_app 0x7f0c0003
+int menu written_samples 0x7f0c0004
 int string abc_action_bar_home_description 0x7f0a0001
 int string abc_action_bar_up_description 0x7f0a0002
 int string abc_action_menu_overflow_description 0x7f0a0003
