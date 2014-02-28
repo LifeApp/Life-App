@@ -34,18 +34,19 @@ public class LifeApp extends ActionBarActivity implements OnClickListener {
 	@Override
 	public void onClick(View theView)
 	{
-		switch(theView.getId())
+		int id = theView.getId();
+		if (id == R.id.greetings)
 		{
-			case R.id.greetings: 
-				Intent greetIntent = new Intent(this,Greetings.class);
-				startActivity(greetIntent);
-				break;
-			case R.id.departures:
-				Intent departIntent = new Intent(this,Departures.class);
-				startActivity(departIntent);
-				break;
-			default:
-				break;
+			Intent greetIntent = new Intent(this,Greetings.class);
+			startActivity(greetIntent);
+		} 
+		else if (id == R.id.departures) 
+		{
+			Intent departIntent = new Intent(this,Departures.class);
+			startActivity(departIntent);
+		}
+		else
+		{
 		}
 	}
 
